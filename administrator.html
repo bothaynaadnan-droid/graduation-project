@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Dashboard - Jordan Board System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="administrator.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">JRS</div>
+                    <h1>Jordan Board Registration - Admin</h1>
+                    <div class="jordan-flag">
+                        <div class="flag-stripes">
+                            <div class="stripe stripe-black"></div>
+                            <div class="stripe stripe-white"></div>
+                            <div class="stripe stripe-green"></div>
+                        </div>
+                        <div class="flag-triangle"></div>
+                        <div class="flag-star"><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Dashboard -->
+    <section class="admin-dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2>Administrator Dashboard</h2>
+                <div class="admin-controls">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search applications..." class="search-input">
+                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="btn btn-primary"><i class="fas fa-download"></i> Export Report</button>
+                </div>
+            </div>
+
+            <!-- Statistics Overview -->
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-icon pending">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Pending Review</h3>
+                        <div class="stat-value">24</div>
+                        <span class="stat-change">+5 from yesterday</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon approved">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Approved Today</h3>
+                        <div class="stat-value">18</div>
+                        <span class="stat-change positive">+12% from yesterday</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon rejected">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Rejected Today</h3>
+                        <div class="stat-value">3</div>
+                        <span class="stat-change negative">-2 from yesterday</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon total">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <div class="stat-value">1,247</div>
+                        <span class="stat-change positive">+34 this week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-btn">
+                        <i class="fas fa-user-check"></i>
+                        <span>Verify Applications</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Generate Reports</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-cog"></i>
+                        <span>System Settings</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security Logs</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-database"></i>
+                        <span>Database Backup</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pending Applications Table -->
+            <div class="applications-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-tasks"></i> Pending Applications</h3>
+                    <div class="section-controls">
+                        <select class="filter-select">
+                            <option>All Types</option>
+                            <option>Professional Registration</option>
+                            <option>License Renewal</option>
+                            <option>Specialization Update</option>
+                        </select>
+                        <button class="btn btn-outline">View All</button>
+                    </div>
+                </div>
+
+                <div class="applications-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="selectAll">
+                                </th>
+                                <th>Application ID</th>
+                                <th>Applicant Name</th>
+                                <th>Type</th>
+                                <th>Submission Date</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="row-checkbox"></td>
+                                <td>JRS-P-2023-015</td>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-sm">AM</div>
+                                        <span>Ahmed Mohammad</span>
+                                    </div>
+                                </td>
+                                <td>Professional Registration</td>
+                                <td>15 Oct 2023</td>
+                                <td><span class="priority high">High</span></td>
+                                <td><span class="status status-pending">Pending Review</span></td>
+                                <td class="action-buttons">
+                                    <button class="btn btn-sm btn-primary" title="Review">
+
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-success" title="Approve">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" title="Reject">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="row-checkbox"></td>
+                                <td>JRS-P-2023-016</td>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-sm">SA</div>
+                                        <span>Sarah Ahmad</span>
+                                    </div>
+                                </td>
+                                <td>License Renewal</td>
+                                <td>14 Oct 2023</td>
+                                <td><span class="priority medium">Medium</span></td>
+                                <td><span class="status status-under-review">Under Review</span></td>
+                                <td class="action-buttons">
+                                    <button class="btn btn-sm btn-primary" title="Review">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-success" title="Approve">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" title="Reject">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="row-checkbox"></td>
+                                <td>JRS-P-2023-017</td>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-sm">MJ</div>
+                                        <span>Mohammad Jamal</span>
+                                    </div>
+                                </td>
+                                <td>Specialization Update</td>
+                                <td>13 Oct 2023</td>
+                                <td><span class="priority low">Low</span></td>
+                                <td><span class="status status-pending">Pending Review</span></td>
+                                <td class="action-buttons">
+                                    <button class="btn btn-sm btn-primary" title="Review">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-success" title="Approve">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" title="Reject">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="row-checkbox"></td>
+                                <td>JRS-P-2023-018</td>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-sm">LA</div>
+                                        <span>Lina Abdullah</span>
+
+
+                                    </div>
+                                </td>
+                                <td>Professional Registration</td>
+                                <td>12 Oct 2023</td>
+                                <td><span class="priority high">High</span></td>
+                                <td><span class="status status-pending">Pending Review</span></td>
+                                <td class="action-buttons">
+                                    <button class="btn btn-sm btn-primary" title="Review">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-success" title="Approve">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" title="Reject">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="activity-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-history"></i> Recent Activity</h3>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon approved">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Application JRS-P-2023-014</strong> was approved</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon rejected">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Application JRS-P-2023-013</strong> was rejected</p>
+                            <span class="activity-time">4 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon user">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>New user registration</strong> completed</p>
+                            <span class="activity-time">6 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon system">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>System backup</strong> completed successfully</p>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Status -->
+            <div class="system-status">
+                <div class="section-header">
+                    <h3><i class="fas fa-server"></i> System Status</h3>
+                </div>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <div class="status-info">
+                            <h4>Blockchain Network</h4>
+                            <p>All nodes synchronized</p>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <div class="status-info">
+                            <h4>Cloud Storage</h4>
+                            <p>85% storage available</p>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-indicator warning"></div>
+                        <div class="status-info">
+                            <h4>IoT Biometric Devices</h4>
+                            <p>2 devices offline</p>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <div class="status-info">
+                            <h4>Database</h4>
+                            <p>Optimal performance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jordan Board Registration</h3>
+                    <p>Administrative portal for managing professional registrations across Jordan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Admin Links</h3>
+                    <ul>
+                        <li><a href="#">User Management</a></li>
+                        <li><a href="#">System Logs</a></li>
+                        <li><a href="#">Backup & Recovery</a></li>
+                        <li><a href="#">Security Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Support</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>0797629557</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>admin@jordanboard.gov.jo</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amman, Jordan</span>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>System Info</h3>
+                    <div class="system-info">
+                        <p>Version: 2.1.3</p>
+                        <p>Last Backup: Today 02:00 AM</p>
+                        <p>Uptime: 99.8%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Jordan Board Registration System. All rights reserved. | Admin Portal - World Islamic
+                    Sciences and Education University</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
