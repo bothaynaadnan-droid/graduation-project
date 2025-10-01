@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Board Registration System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <!-- Placeholder for logo -->
+                    <div class="jrs-logo">JRS</div>
+                    <h1>Jordan Board Registration</h1>
+                    <div class="jordan-flag">
+                        <div class="flag-stripes">
+                            <div class="stripe stripe-black"></div>
+                            <div class="stripe stripe-white"></div>
+                            <div class="stripe stripe-green"></div>
+                        </div>
+                        <div class="flag-triangle"></div>
+                        <div class="flag-star"><i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="registerBtn">Register</button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Role Selection -->
+    <section class="role-selection" id="home">
+        <div class="container">
+            <div class="section-title">
+                <h2>Welcome to Jordan Board Registration System</h2>
+                <p>Please select your role to continue</p>
+            </div>
+            <div class="role-cards">
+                <div class="role-card" id="passengerRole">
+                    <a href="passenger.html">
+                        <div class="role-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Passenger</h3>
+                        <p>Register for board certification, track application status, and manage your profile</p>
+                    </a>
+                </div>
+                <div class="role-card" id="adminRole">
+                    <a href="administrator.html">
+                        <div class="role-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Administrator</h3>
+                        <p>Manage applications, verify documents, and oversee the registration process</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Jordan Professional Board Registration System</h2>
+            <p>Revolutionizing professional registration with cutting-edge Blockchain, Cloud, and IoT technologies for
+                enhanced security and efficiency.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-light" id="heroRegisterBtn">Get Started</button>
+                <button class="btn btn-outline">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide comprehensive solutions for professional board registration in Jordan</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-fingerprint"></i></div>
+                    <h3>Biometric Verification</h3>
+                    <p>Secure identity verification using IoT fingerprint scanners for enhanced security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-link"></i></div>
+                    <h3>Blockchain Security</h3>
+                    <p>Immutable record-keeping using blockchain technology to prevent fraud.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Storage</h3>
+                    <p>Secure cloud-based document storage with anytime, anywhere access.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Accessibility</h3>
+                    <p>Access the system from any device with our responsive design.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Processing</h3>
+                    <p>Reduced processing times with our automated workflow system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Advanced Security</h3>
+                    <p>Multi-layered security protocols to protect your sensitive data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="section-title">
+                <h2>Advanced Technologies</h2>
+
+                <p>Our system leverages cutting-edge technologies for maximum security and efficiency</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fab fa-ethereum"></i></div>
+                    <h3>Blockchain</h3>
+                    <p>Immutable, transparent record-keeping that prevents data tampering and fraud.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Computing</h3>
+                    <p>Scalable infrastructure with high availability and disaster recovery capabilities.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fas fa-fingerprint"></i></div>
+                    <h3>IoT Biometrics</h3>
+                    <p>Advanced fingerprint recognition for secure identity verification.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon"><i class="fas fa-lock"></i></div>
+                    <h3>End-to-End Encryption</h3>
+                    <p>Military-grade encryption to protect all sensitive data transmissions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jordan Culture Section -->
+    <section class="jordan-culture">
+        <div class="container">
+            <div class="section-title">
+                <h2>Discover Jordan's Heritage</h2>
+                <p>Explore the rich cultural heritage of Jordan while using our registration system</p>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <a href="https://en.wikipedia.org/wiki/Petra" target="_blank">
+                        <img src="image/Petra, Jordan.jpeg" alt="Petra" class="culture-img">
+                        <div class="culture-name">Petra</div>
+                    </a>
+                </div>
+                <div class="culture-card">
+                    <a href="https://en.wikipedia.org/wiki/Jerash" target="_blank">
+                        <img src="image/Jerash, Jordan_.jpeg" alt="Jerash" class="culture-img">
+                        <div class="culture-name">Jerash</div>
+                    </a>
+                </div>
+                <div class="culture-card">
+                    <a href="https://en.wikipedia.org/wiki/Wadi_Rum" target="_blank">
+                        <img src="image/Wadi Rum Desert, Jordan.jpeg" alt="Wadi Rum" class="culture-img">
+                        <div class="culture-name">Wadi Rum</div>
+                    </a>
+                </div>
+                <div class="culture-card">
+                    <a href="https://en.wikipedia.org/wiki/Dead_Sea" target="_blank">
+                        <img src="image/Dead sea - Jordan.jpeg" alt="Dead Sea" class="culture-img">
+                        <div class="culture-name">Dead Sea</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>We are dedicated to revolutionizing the professional board registration process in Jordan through
+                        the implementation of cutting-edge technologies including Blockchain, Cloud Computing, and IoT
+                        biometrics.</p>
+
+                    <h3>Why Choose Our System?</h3>
+                    <p>Our platform offers unprecedented security, transparency, and efficiency in professional
+                        registration. By leveraging blockchain technology, we ensure that all records are immutable and
+                        tamper-proof. Our cloud infrastructure provides scalability and reliability, while IoT
+                        fingerprint recognition guarantees secure identity verification.</p>
+
+                    <h3>Our Team</h3>
+
+                    <p>We are a dedicated team of developers and researchers from the World Islamic Sciences and
+                        Education University, committed to advancing Jordan's digital infrastructure through innovative
+                        solutions.</p>
+
+
+                    <div class="university-badge">
+                        <a href="https://www.wise.edu.jo/" class="university-link" target="_blank">
+                            <i class="fas fa-university"></i>
+                            <span>World Islamic Sciences and Education University</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                        alt="Team Collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Register Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Login to Your Account</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="tabs">
+                <div class="tab active" data-tab="login">Login</div>
+                <div class="tab" data-tab="register">Register</div>
+            </div>
+            <div class="tab-content active" id="login-tab">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginRole">Login As</label>
+                        <select id="loginRole" class="form-control" required>
+                            <option value="">Select Role</option>
+                            <a href="passenger.html" value="passenger">Passenger</a>
+                            <option value="admin">Administrator</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    <div class="form-footer">
+                        <p><a href="#">Forgot your password?</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-content" id="register-tab">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerName">Full Name</label>
+                        <input type="text" id="registerName" class="form-control" placeholder="Enter your full name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" class="form-control"
+                            placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Confirm Password</label>
+                        <input type="password" id="registerConfirmPassword" class="form-control"
+                            placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerRole">Register As</label>
+                        <select id="registerRole" class="form-control" required>
+                            <option value="">Select Role</option>
+
+
+                            <option value="passenger">Passenger</option>
+                            <option value="admin">Administrator</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jordan Board Registration</h3>
+                    <p>Revolutionizing professional registration processes across Jordan with cutting-edge technology.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>0797629557</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@jordanboard.gov.jo</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amman, Jordan</span>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Jordan Board Registration System. All rights reserved. | A project by students of World
+                    Islamic Sciences and Education University</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const loginBtn = document.getElementById('loginBtn');
+        const registerBtn = document.getElementById('registerBtn');
+        const heroRegisterBtn = document.getElementById('heroRegisterBtn');
+        const authModal = document.getElementById('authModal');
+        const closeModal = document.querySelector('.close-modal');
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+
+        // Show modal when login/register buttons are clicked
+        loginBtn.addEventListener('click', () => {
+            authModal.style.display = 'flex';
+            document.getElementById('modalTitle').textContent = 'Login to Your Account';
+            switchTab('login');
+        });
+
+        registerBtn.addEventListener('click', () => {
+            authModal.style.display = 'flex';
+            document.getElementById('modalTitle').textContent = 'Create an Account';
+            switchTab('register');
+        });
+
+        heroRegisterBtn.addEventListener('click', () => {
+            authModal.style.display = 'flex';
+            document.getElementById('modalTitle').textContent = 'Create an Account';
+
+            switchTab('register');
+        });
+
+        // Role selection
+
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', () => {
+            authModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === authModal) {
+                authModal.style.display = 'none';
+            }
+        });
+
+        // Tab switching functionality
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+                switchTab(tabId);
+            });
+        });
+
+        function switchTab(tabId) {
+            // Update active tab
+            tabs.forEach(tab => {
+                if (tab.getAttribute('data-tab') === tabId) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+
+            // Update active tab content
+            tabContents.forEach(content => {
+                if (content.id === `${tabId}-tab`) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        }
+
+        // Login form submission
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            const role = document.getElementById('loginRole').value;
+
+            // Simple validation
+            if (email && password && role) {
+                // In a real application, you would send this to a server
+                alert(`Logging in as ${role}...`);
+                authModal.style.display = 'none';
+
+                // Clear form
+                loginForm.reset();
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+
+        // Register form submission
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+            const role = document.getElementById('registerRole').value;
+
+            // Simple validation
+            if (name && email && password && confirmPassword && role) {
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match');
+                    return;
+                }
+
+                // In a real application, you would send this to a server
+                alert(`Registering as ${role}...`);
+                authModal.style.display = 'none';
+
+                // Clear form
+                registerForm.reset();
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+    </script>
+</body>
+
+</html>
